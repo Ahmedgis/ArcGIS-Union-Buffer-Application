@@ -93,7 +93,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.sketchVM = new SketchViewModel({
       view: this.view,
       layer: this.pointsLayer,
-      updateOnGraphicClick: true,
       pointSymbol: new PictureMarkerSymbol({
         url: 'https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png',
         width: '32px',
@@ -101,7 +100,6 @@ export class AppComponent implements OnInit, OnDestroy {
       }),
       updateOnGraphicClick: true,
       defaultUpdateOptions: {
-        toggleTool: true,
         enableRotation: false,
         enableScaling: false
       }
